@@ -31,9 +31,9 @@ alias lz='lazygit'
 
 # aliases related to platform IO (during BTP)
 
-alias mon0='pio device monitor -p /dev/ttyUSB0'
-alias mon1='pio device monitor -p /dev/ttyUSB1'
-alias mon2='pio device monitor -p /dev/ttyUSB2'
+alias mon0='pio device monitor --filter time -p /dev/ttyUSB0'
+alias mon1='pio device monitor --filter time -p /dev/ttyUSB1'
+alias mon2='pio device monitor --filter time -p /dev/ttyUSB2'
 
 alias up0='pio run -t upload --upload-port /dev/ttyUSB0'
 alias up1='pio run -t upload --upload-port /dev/ttyUSB1'
