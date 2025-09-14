@@ -77,6 +77,10 @@ alias icat='kitten icat'
 #  cd into a tempdir
 alias ctemp='cd $(mktemp -d)'
 
+# stderr in red
+# https://github.com/ku1ik/stderred
+alias stderred="LD_PRELOAD=/home/aks/Tools/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+
 ######### fg-bg toggle via c-z ##########
 # <c-z> toggles between fg and bg
 function fg-bg {
