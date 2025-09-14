@@ -1,19 +1,21 @@
-export QT_INSTALL="/home/aks/.quicktest"
+export QT_INSTALL="$HOME/.quicktest"
 export PATH="$PATH:$QT_INSTALL/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/share/nvim/mason/bin"
 
 # export LC_ALL="en_US.UTF-8"
 # export LC_CTYPE="en_US.UTF-8"
 export FZF_DEFAULT_OPTS="--height 50% --reverse --multi"
-# export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export MANPAGER='nvim +Man!'
-export PATH=$PATH:~/.local/bin 
+
 export DOWN="$HOME/Downloads/"
 export DWON="$HOME/Downloads/" # typo proofing
 export SCROT="$HOME/Pictures/Screenshots/"
+
 export VISUAL='nvim'
 export EDITOR='nvim'
 export MANPAGER="nvim +Man!"
