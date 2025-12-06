@@ -61,7 +61,7 @@ alias mars="java -jar ~/Tools/MARS/Mars4_5.jar"
 
 # ctf etc aliases
 alias cyberchef="firefox --new-window  ~/Tools/CyberChef/*.html"
-alias pwn_college="TERM=xterm-256color ssh -i ~/.ssh/id_ed25519 hacker@pwn.college"
+alias pwn_college="TERM=xterm-256color ssh -i ~/.ssh/id_ed25519 hacker@dojo.pwn.college"
 alias tryhackme="echo -e '\033[48;2;255;219;21m\033[38;2;0;0;255m******************************************************************\n* ensure that mobile hotspot is connected, then the switch trick *\n******************************************************************\033[m';sudo openvpn ~/codin/infosec/ctf/tryhackme/rasimhankunrava.ovpn"
 
 # corewars pmars alias
