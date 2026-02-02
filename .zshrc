@@ -370,7 +370,7 @@ nvm(){
 
 quote_rainbow() {
 # sudo apt install fortune-mod cowsay lolcat
-fortune | cowsay -f stegosaurus | lolcat
+fortune -a | cowsay -f stegosaurus | lolcat
 }
 
 quote_rainbow
