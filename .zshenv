@@ -27,6 +27,9 @@ export MANPAGER="nvim +Man!"
 export ZSHZ_EXCLUDE_DIRS="/home/aks/.config/aoc_helper"
 export ZSHZ_CASE="smart"
 
+# make the default style dark for QT applications
+# export QT_STYLE_OVERRIDE=Adwaita-Dark 
+
 
 # export SPRING_HOME="/home/aks/codin/cso_assignments/cse361/project/spring_boot_cli/spring-3.3.4"
 # export PATH="$PATH:$SPRING_HOME/bin"
@@ -34,6 +37,7 @@ export ZSHZ_CASE="smart"
 # https://github.com/dflock/kitty-save-session
 # ln -s $PWD/kitty-convert-dump.py ~/.local/bin
 # also use this patch: https://github.com/RanzQ/kitty-save-session/blob/main/kitty-convert-dump.py
+export KITTY_SESSION_FILE_PATH_CUSTOM="$HOME/.local/share/kitty/sessions/kitty-session.kitty"
 
 # file containing sensitive env variables
 # e.g. imaginary_api_key

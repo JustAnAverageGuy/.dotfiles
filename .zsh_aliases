@@ -147,6 +147,7 @@ ctf()
 # }
 # compdef _man man
 
+
 mksession()
 {
     # https://github.com/dflock/kitty-save-session
@@ -154,15 +155,16 @@ mksession()
     # ln -s $PWD/kitty-convert-dump.py ~/.local/bin
  
     tmpdir=$(mktemp --tmpdir -d kitty-converter-dump.XXXXX)
-    session_file=~/kitty-session.kitty
+    session_file=${KITTY_SESSION_FILE_PATH_CUSTOM:-"$HOME/.local/share/kitty/sessions/kitty-session.kitty"}
     kitty @ ls > $tmpdir/kitty-dump.json && echo "# Created at: $(date)\n" > $session_file
     cat $tmpdir/kitty-dump.json | kitty-convert-dump.py >> $session_file
 }
 
 loadsession()
 {
+    # TODO: transition to the inbuilt session management sometime
     # idiom: `loadsession && exit`
-    session_file=~/kitty-session.kitty
+    session_file=${KITTY_SESSION_FILE_PATH_CUSTOM:-"$HOME/.local/share/kitty/sessions/kitty-session.kitty"}
     if [[ -f $session_file ]]; then
 	echo "> Loading session from $session_file"
 	kitty --session $session_file -1
@@ -170,8 +172,8 @@ loadsession()
 	return 0
     fi
     echo "session file not found at $session_file"
-    echo "use `mksession` to save session"
+    echo "use \`mksession\` to save session"
     return 1
 }
 
-# vim: nowrap
+# vim: nowrap:sw=4:
