@@ -121,3 +121,7 @@ export QT_INSTALL="/home/aks/.quicktest"
 export PATH="$QT_INSTALL/bin:$PATH"
 
 . "$HOME/.cargo/env"
+
+
+# Enables autocompletion of options for bashfuscator
+eval "$(/usr/bin/register-python-argcomplete3 bashfuscator)"
