@@ -133,7 +133,7 @@ bindkey -a \
 ###################################################}}}
 
 # load https://github.com/agkozak/zsh-z
-source ~/.zsh_plugins/zsh_z/zsh-z/zsh-z.plugin.zsh
+[[ -f "$HOME/.zsh_plugins/zsh_z/zsh-z/zsh-z.plugin.zsh" ]] && source "$HOME/.zsh_plugins/zsh_z/zsh-z/zsh-z.plugin.zsh"
 
 fpath=(
     # $HOME/.zsh_plugins/my-widgets # tried this, did not work
