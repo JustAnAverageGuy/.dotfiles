@@ -1,0 +1,9 @@
+#compdef mcd
+
+# Complete existing directories for mcd.  A non-matching path remains valid:
+# mcd will create it before changing into it.
+_mcd() {
+  _arguments -C '1:directory (created if absent):_files -/'
+}
+
+_mcd "$@"
